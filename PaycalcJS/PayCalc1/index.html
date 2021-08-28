@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class=Menus>
+        <ul id=TaxYears>
+            <li class=taxyeartext> Select a tax year!<br>
+                <a class=printemployment, id="taxyear"></a></li>
+            <li> <a id=2021 value="2021"> 2021 </a> </li>
+            <li> <a id=2020 value="2020"> 2020 </a> </li>
+            <li> <a id=2019 value="2019"> 2019 </a> </li>
+        </ul>
+
+        
+        <ul id=Employment">
+            <li class=employmenttext> How are you employed?<br>
+                <a class=printemployment, id="employ"></a></li>
+            
+            <li> <a id=fulltime value="fulltime"> Full Time </a> </li>
+            <li> <a id=parttime value="parttime"> Part Time </a> </li>
+            <li> <a id=casual value="casual"> Casual </a> </li>
+        </ul>
+    </div>
+
+    <div id="welcome" class="welcome">Welcome to the paycalc!<br></div>
+            Enter your payrate<br>
+            <form>
+                Payrate:
+                <input type="text" name="Payrate" id="Payrate"size="20">
+            </form>
+        <br>
+
+    <div>
+        Enter your hours for the weekdays.<br>
+        <form>
+            Weekly hours: 
+            <input type="text" name="WeeklyHours" id="WeeklyHours" size="20">
+        </form>
+        <br>
+
+        Enter your hours on saturday.<br>
+        <form>
+            Saturday hours: 
+            <input type="text" name="SaturdayHours" id="SaturdayHours" size="20">
+        </form>
+        <br>
+
+        Enter your hours on sunday.<br>
+        <form>
+            Sunday hours: 
+            <input type="text" name="SundayHours" id="SundayHours" size="20">
+        </form>
+        <br>
+
+        Enter your hours on public holidays.<br>
+        <form>
+            Public holiday hours: 
+            <input type="text" name="PublicHolidayHours" id="PublicHolidayHours" size="20">
+        </form>
+        <br>
+
+        <div class=text>
+            <p class=debug, id="debug"></p>
+
+            <p class=payrate, id="payrate"></p>
+
+            <p class=employment , id="employment"></p>
+
+            <p class=beforetax , id="weekpaybeforetax"></p>
+            <p class=beforetax , id="yearpaybeforetax"></p>
+
+            <p class=aftertax id="weekpayaftertax"></p>
+            <p id="yearpayaftertax"></p>
+
+            
+            <p id="taxfortheweek"></p>
+            <p id="taxfortheyear"></p>
+
+            <p id="medicarelevyweek"></p>
+            <p id="medicarelevyyear"></p>
+
+            <p id="lowoffsetweek"></p>
+            <p id="lowoffsetyear"></p>
+
+            <p id="middleoffsetweek"></p>
+            <p id="middleoffsetyear"></p>
+
+            <p id="totaloffsetweek"></p>
+            <p id="totaloffsetyear"></p>
+        </div>
+
+
+        
+        <button id="calculate">Calculate!</button>
+    </div>
+
+
+    <script src=paycalc.js></script>
+</body>
+</html>
